@@ -1,3 +1,14 @@
+Steps I am taking:  
+1.) pnpm compile  
+2.) npx hardhat lz:deploy  
+3.) npx hardhat lz:oapp:wire --oapp-config layerzero.config.ts  
+4.) npx hardhat onft:mint --contract <contract to mint tokens to> --to <your address> --token-id 1 --network-name <avalanche-testnet or amoy-testnet>  
+5.) npx hardhat onft:send --contract-a <contract address on source chain> --contract-b <contract address on destination chain> --network-a <avalanche-testnet or amoy-testnet> --network-b <avalanche-testnet or amoy-testnet> --token-id 1  
+
+
+
+
+
 <p align="center">
   <a href="https://layerzero.network">
     <img alt="LayerZero" style="width: 400px" src="https://docs.layerzero.network/img/LayerZero_Logo_White.svg"/>
