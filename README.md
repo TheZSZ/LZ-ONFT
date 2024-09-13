@@ -1,4 +1,4 @@
-Steps I am taking:  
+Steps:  
 1.) pnpm compile  
 2.) npx hardhat lz:deploy  
 3.) npx hardhat lz:oapp:wire --oapp-config layerzero.config.ts  
