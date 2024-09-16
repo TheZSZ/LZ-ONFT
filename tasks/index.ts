@@ -141,7 +141,7 @@ task('lz:onft:send', 'Send an ONFT from one network to another using LayerZero t
 
         // Execute the ONFT transfer
         try {
-            const tx = await onft.send(sendParam, [nativeFee, 0], sender, { value: nativeFee })
+            const tx = await onft.send(sendParam, [nativeFee, 0], sender, { value: nativeFee, gasLimit: 1_000_000 })
             console.log(`Tx initiated. View on LayerZero Scan: https://testnet.layerzeroscan.com/tx/${tx.hash}`)
 
             // Print more information from the transaction receipt
